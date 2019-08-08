@@ -2,6 +2,8 @@
 function makePlot() {
     d3.csv( "data.csv" )
         .then( function( data ) {
+            console.log(data[0]);
+            console.log(data[5]);
             d3.select( "svg" )
                 .selectAll( "circle" )
                 .data( data )
