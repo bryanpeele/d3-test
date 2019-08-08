@@ -1,6 +1,6 @@
     
 function makePlot() {
-    d3.csv( "data.csv" )
+    d3.tsv( "data.tsv" )
         .then( function( data ) {
             console.log(data[0]);
             console.log(data[5]);
